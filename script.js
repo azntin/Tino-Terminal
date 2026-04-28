@@ -7,7 +7,7 @@ const commands = {
     help:   `available commands:
             help     — show this menu
             info     — about me
-            skills   — my skills/techstacks
+            skill    — my skills/techstacks
             proj     — my past and upcoming projects
             contact  — how to reach me
             cls      — clear the terminal`,
@@ -18,7 +18,7 @@ const commands = {
             opportunities within the SoCal region. Feel free to message me on any of the
             platforms using the 'contact' command! :)`,
 
-    skills:     `Languages: C++, Python, HTML, CSS, Java/TypeScript
+    skill:     `Languages: C++, Python, HTML, CSS, Java/TypeScript
                 Tech Stacks: React, TailwindCSS, Git, Node.js`,
 
     proj:   `projects:
@@ -74,7 +74,7 @@ input.addEventListener('keydown', (e) => {
         ];
 
         const header = document.createElement('p');
-        header.textContent = 'contact (click here!):';
+        header.textContent = 'contact/communication links:';
         header.style.color = 'rgb(17, 93, 255)';
         header.style.margin = '0';
         header.style.paddingLeft = '15px';
@@ -82,7 +82,6 @@ input.addEventListener('keydown', (e) => {
         header.style.fontWeight = '800';
         content.insertBefore(header, inputLine);
 
-    // Insert rows in reverse so they appear in the right order
     [...contactData].forEach(({ label, href, display }) => {
         const p = document.createElement('p');
         p.style.color = 'rgb(17, 93, 255)';
@@ -141,7 +140,7 @@ Welcome to
 
 For more information, type 'help'                                                                                                                 
 </pre>`;    
-    document.getElementById('terminal-content').style.justifyContent = 'flex-end';
+    document.getElementById('terminal-content').style.justifyContent = 'flex-start';
     inputLine.style.display = 'flex';
     input.focus();
 }, 4200);

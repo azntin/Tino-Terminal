@@ -21,8 +21,9 @@ body {
     justify-content: center;   
     position: relative;
     flex-shrink: 0;
-    border-top-right-radius: 7px;
-    border-top-left-radius: 7px;         
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;  
+    margin-bottom: 10px;       
 }
 
 #top-bar-text {
@@ -43,7 +44,8 @@ body {
 #terminal-screen {
     background-color: black;
     opacity: 0.75;
-    display: block;
+    display: flex;
+    flex-direction: column;
     height: 8vh;
     width: 40%;
     align-self: center;
@@ -74,8 +76,13 @@ body {
     overflow-x: hidden;
     flex: 1;
     min-height: 0;
-    padding: 10px 0;
-    justify-content: center;
+    padding: 0;
+    justify-content: flex-start;
+    scrollbar-width: none;
+}
+
+#terminal-content::-webkit-scrollbar {
+    display: none;
 }
 
 #input-line {
@@ -99,14 +106,14 @@ body {
 
 #prompt {
     color: whitesmoke;
-    margin: 0;
 }
 
 .text {
     color: whitesmoke;
-    margin-top: 6px;
+    margin-top: -6px;
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 10px;
     overflow: hidden;
     white-space: nowrap;
 }
