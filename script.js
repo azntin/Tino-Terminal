@@ -1,15 +1,16 @@
 const input = document.getElementById('terminal-input');
 const content = document.getElementById('terminal-content');
 const inputLine = document.getElementById('input-line');
+const screen = document.getElementById('terminal-screen');
 
 const commands = {
     help:   `available commands:
             help     — show this menu
             info     — about me
-            skills   - my skills/techstacks
+            skills   — my skills/techstacks
             proj     — my past and upcoming projects
             contact  — how to reach me
-            cls      - clear the terminal`,
+            cls      — clear the terminal`,
 
     info:   `Justin Tran:
             Hi there! I'm a third year computer science major and aspiring SWE studying @ UCR.
@@ -22,15 +23,15 @@ const commands = {
 
     proj:   `projects:
                 1. tino-terminal
-                - This current terminal you are on is my personal website! It was made using
+                This current terminal you are on is my personal website! It was made using
                 vanilla HTML, CSS, and JavaScript being hosted directly from GitHub where
                 you can find the source code for this project!
                 2. C++ BlackJack Dealer
-                - A project I made during my college course that emulates an entire game of
+                A project I made during my college course that emulates an entire game of
                 BlackJack all within the terminal. Coded entirely from C++, the game's source
                 code can be found within my GitHub.
                 3. project three 
-                — Coming soon!`,
+                Coming soon!`,
 
     contact: null,
     cls: null    
@@ -119,6 +120,13 @@ input.addEventListener('keydown', (e) => {
     } else {
         printLine(`'${val}' is not a valid argument — type 'help' for available commands`);
     }
+});
+
+screen.addEventListener('mousedown', (e) => {
+    if (e.target.tagName === 'A') return;
+    e.preventDefault();
+    screen.style.cursor = 'pointer';
+    input.focus();
 });
 
 // init
