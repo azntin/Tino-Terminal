@@ -13,10 +13,10 @@ const commands = {
             cls      — clear the terminal`,
 
     info:   `Justin Tran:
-            Hi there! I'm a third year computer science major and aspiring SWE studying @ UCR.
-            I'm currently based in Montclair, California and am actively looking for job
-            opportunities within the SoCal region. Feel free to message me on any of the
-            platforms using the 'contact' command! :)`,
+            Hi there! I'm a third year computer science major and an aspiring SWE studying 
+            @ UCR. I'm currently based in Montclair, California and am actively looking for 
+            job opportunities within the SoCal region. Feel free to message me on any of 
+            the platforms using the 'contact' command! :)`,
 
     skill:     `Languages: C++, Python, HTML, CSS, Java/TypeScript
                 Tech Stacks: React, TailwindCSS, Git, Node.js`,

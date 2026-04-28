@@ -52,9 +52,9 @@ body {
     justify-self: center;
     border: 3px solid rgb(161, 161, 161);
     border-radius: 15px;
-    box-shadow: 0px 0px 40px 10px rgba(255, 255, 255, 0.671);
+    box-shadow: 0px 0px 40px 10px rgba(255, 255, 255, 0.8);
     overflow: hidden;
-    animation: expand 1s ease-in-out 3s forwards;
+    animation: expand 1s ease-in-out 3s forwards, glow 1.5s infinite alternate;
 }
 
 @keyframes expand {
@@ -65,6 +65,15 @@ body {
     to {
         width: 80%;
         height: 80vh;
+    }
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0px 0px 40px 10px rgba(255, 255, 255, 0.8);
+    }
+    to {
+        box-shadow: 0px 0px 40px 10px rgba(255, 255, 255, 0.2);
     }
 }
 
