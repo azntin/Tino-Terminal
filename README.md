@@ -1,7 +1,11 @@
 # Tino-Terminal
-My own personal website created using vanilla HTML, CSS, and JavaScript, emulating modern terminal to highlight my portfolio.
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JS](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+</br>
 
-## How it works
+## Description
+My personal website, which emulates a modern terminal to highlight my portfolio. </br>
 You can access the website [here](https://azntin.github.io/Tino-Terminal/) and utilize commands such as:
 - help
 - info
@@ -13,6 +17,6 @@ You can access the website [here](https://azntin.github.io/Tino-Terminal/) and u
 
 ### Updates Needed:
 + Revise grammatical statements
-+ Optimize for mobile viewing
++ Optimize for mobile viewing (fix input)
 + Potential minigame implementation
   
